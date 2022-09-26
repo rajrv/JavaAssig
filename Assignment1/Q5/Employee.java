@@ -1,3 +1,11 @@
+/*Q5) Create a class named Employee with fields firstname,lastname,age and designation.
+The class should:
+
+    have all types of constructors to initialize the object
+    class should also have setter methods to update a particular field
+    Override its toString method to display a meaningful message using all these fields.
+*/
+
 public class Employee {
 
     private String firstName;
@@ -5,10 +13,11 @@ public class Employee {
     private int age;
     private String designation;
 
+    //No argument constructor
     Employee(){
         System.out.println("Not Initialsed");
     }
-
+    //Setters
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -28,6 +37,7 @@ public class Employee {
         return ("Detail of the Employee(Name,age,Designation): "+firstName+" "+lastName+" "+age+" "+designation);
     }
 
+    //Parameterized constructor
     Employee(String firstName, String lastName, int age, String designation){
         this.firstName=firstName;
         this.lastName=lastName;

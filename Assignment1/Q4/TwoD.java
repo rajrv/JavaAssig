@@ -1,3 +1,8 @@
+/*Q4) Create a two dimensional array of integers and display:
+
+    sum of all elements of each column
+    sum of all elements of each row
+*/
 import java.util.Scanner;
 
 public class TwoD {
@@ -17,7 +22,9 @@ public class TwoD {
                 arr[i][j]=S.nextInt();
             }
         }
-        S.close();
+        S.close();//Closing Scanner class
+
+        //Calculating sum of each row and each column
         for(int i=0;i<r;i++)
         {
             for(int j=0;j<c;j++)

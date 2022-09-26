@@ -1,5 +1,8 @@
 import java.util.*;
 import java.lang.*;
+/*Q1) Write a class with FirstName, LastName & age field.
+Print Firstname, LastName & age
+using static block, static method & static variable respectively.*/
 public class Person {
     static String FirstName;
     static String LastName;
