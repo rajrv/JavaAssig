@@ -25,11 +25,13 @@ public class Person {
     }
     public static void main(String args[]){
 
-        Person p1 = new Person("Vaibhav");//Creating object to invoke method
+       /* Person p1 = new Person("Vaibhav");//Creating object to invoke method
 
         p1.displayLastName(); // Printing LastName using static method
 
         System.out.println(Person.age);//Printing static variable
+        System.out.println(LastName);*/
+        System.out.println(LastName);
 
 
     }
