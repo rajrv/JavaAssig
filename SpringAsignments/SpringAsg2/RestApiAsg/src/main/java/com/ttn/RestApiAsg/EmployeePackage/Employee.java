@@ -6,7 +6,7 @@ public class Employee {
 
 
         private Integer id;
-        @Size(min=2)
+       @Size(min = 2)
         private String name;
         private Integer age;
 

@@ -11,6 +11,7 @@ public class EmployeeController {
     private EmployeeDAOService employeeDAOService;
 
     public EmployeeController(EmployeeDAOService employeeDAOService) {
+
         this.employeeDAOService = employeeDAOService;
     }
 
@@ -39,5 +40,13 @@ public class EmployeeController {
     public void createEmployee(@Valid @RequestBody Employee emp){
         employeeDAOService.save(emp);
 
+    }
+    @PutMapping("/employees/{id}")
+    public void updateEmployee(@RequestBody Employee eChanges,@PathVariable int id){
+        Employee eCurrent = employeeDAOService.findOne(id);
+        if(eCurrent == null)
+            throw new UserNotFoundException("id:"+id);
+
+        employeeDAOService.updateEmployee(eCurrent,eChanges);
     }
 }

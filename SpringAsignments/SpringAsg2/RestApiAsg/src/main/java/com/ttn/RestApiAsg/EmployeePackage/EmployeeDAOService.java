@@ -40,4 +40,13 @@ public class EmployeeDAOService {
         emp.add(empl);
         return  empl;
     }
+
+    public void updateEmployee(Employee eCurrent,Employee eChanges)
+    {
+
+        eCurrent.setId(eChanges.getId());
+        eCurrent.setAge(eChanges.getAge());
+        eCurrent.setName(eChanges.getName());
+
+    }
 }
